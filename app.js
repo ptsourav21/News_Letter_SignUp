@@ -49,7 +49,7 @@ app.post("/", function (req, res) {
 app.post("/failure", function (req, res) {
   res.redirect("/");
 });
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log("Server is running");
 });
 // 93764e46af507db4d75d553c789f31c6-us12
